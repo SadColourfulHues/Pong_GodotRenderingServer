@@ -1,0 +1,39 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Pong"
+run/main_scene="res://Scenes/SCN_Test.tscn"
+config/features=PackedStringArray("4.1", "Forward Plus")
+config/icon="res://Assets/icon.svg"
+
+[debug]
+
+gdscript/warnings/shadowed_variable=0
+gdscript/warnings/integer_division=0
+
+[display]
+
+window/size/viewport_width=512
+window/size/viewport_height=256
+window/size/mode=4
+window/stretch/mode="viewport"
+window/stretch/aspect="keep_width"
+window/vsync/vsync_mode=0
+
+[dotnet]
+
+project/assembly_name="Pong"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+environment/defaults/default_clear_color=Color(0, 0.109804, 0.247059, 1)
